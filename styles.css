@@ -74,7 +74,7 @@ h2 {
 }
 
 .card-deck {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .card {
@@ -106,11 +106,31 @@ span.ashley {
   text-decoration: underline;
 }
 
-
+/* featured styling */
 
 #featured {
   grid-area: featured;
+  text-align: center;
 }
+
+#featured h3 {
+  padding-top: 20px;
+}
+.card {
+  padding: 5px;
+  border: none;
+  margin: 40px auto;
+  background-color: #ddd8d8;
+}
+
+.vid-title {
+  padding: 0 0 1rem 0;
+}
+.vid-desc {
+  padding-top: 20px;
+}
+
+
 
 #feat-guest {
   grid-area: feat-guest;
