@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.colored {
+  background-color: #ddd8d8;
+}
+
+.brand-text {
+  font-family: 'Almonds';
+}
+
+.container-fluid {
+  padding: 3% 6%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, minmax(20px, auto));
+  grid-template-areas:
+  "nav-bar nav-bar"
+  "title title"
+  "about about"
+  "featured featured"
+  "feat-guest feat-guest"
+  "contact contact";
+}
+
+/* nav-bar styling */
+
+#nav-bar {
+  grid-area: nav-bar;
+  opacity: 0.95;
+}
+
+/* title styling */
+
+
+#title {
+  grid-area: title;
+}
+
+.heading {
+  padding: 16rem 0 17rem;
+}
+
+h1.brand-text {
+  font-size: 7rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ddd8d8, 0 0 25px #ddd8d8, 0 0 5px #ddd8d8;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-shadow: 1px 1px 2px #ddd8d8, 0 0 40px #608929, 0 0 5px #ddd8d8;
+}
+
+.plant-image {
+  background-image: url(images/plant1.png);
+  background-size: cover;
+}
+
+/* about styling */
+
+
+#about {
+  grid-area: about;
+  background-color: #e3dfcf;
+}
+
+.card-deck {
+  padding: 50px 0;
+}
+
+.card {
+  width: 90%;
+}
+#about div.card {
+  border: none;
+  background-color: #e3dfcf;
+}
+
+h3.about-title {
+  font-family: 'Gotu', sans-serif;
+  font-size: 4rem;
+  padding: 0 0 1.5 rem;
+}
+
+.card-img {
+  padding: 0.5rem 0 1.5rem;
+  width: 200px;
+}
+
+.card-text {
+  text-align: left;
+  word-wrap: break-word;
+  font-weight: lighter;
+}
+
+span.ashley {
+  text-decoration: underline;
+}
+
+
+
+#featured {
+  grid-area: featured;
+}
+
+#feat-guest {
+  grid-area: feat-guest;
+}
+
+#contact {
+  grid-area: contact;
+}
