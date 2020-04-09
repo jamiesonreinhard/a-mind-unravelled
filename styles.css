@@ -28,8 +28,8 @@
   grid-template-areas:
   "nav-bar nav-bar"
   "title title"
-  "about-mind about-mind"
   "about-ash about-ash"
+  "about-mind about-mind"
   "featured featured"
   "feat-guest feat-guest"
   "contact contact";
@@ -40,6 +40,7 @@
 #nav-bar {
   grid-area: nav-bar;
   opacity: 0.95;
+  background-color: white;
 }
 
 /* title styling */
@@ -56,17 +57,20 @@
 h1.brand-text {
   font-size: 7rem;
   font-weight: bold;
-  text-shadow: 1px 1px 2px #ddd8d8, 0 0 25px #ddd8d8, 0 0 5px #ddd8d8;
+
+  color: #fff;
 }
 
-h2 {
+#title h2 {
+  padding-top: 10px;
   font-size: 1.5rem;
   font-weight: lighter;
-  text-shadow: 1px 1px 2px #ddd8d8, 0 0 40px #608929, 0 0 5px #ddd8d8;
+
+  color: #fff;
 }
 
 .plant-image {
-  background-image: url(images/plant1.png);
+  background-image: url(images/darkleaves.jpg);
   background-size: cover;
 }
 
@@ -80,6 +84,9 @@ h2 {
   background-color: #ddd8d8;
 }
 
+#about-mind h3 {
+  font-size: 3.5rem;
+}
 #about-mind p {
   text-align: left;
 }
@@ -89,7 +96,7 @@ h2 {
 
 #about-ash {
   grid-area: about-ash;
-  background-color: #e3dfcf;
+  background-color: #fff;
 }
 
 .card-deck {
@@ -99,7 +106,6 @@ h2 {
 
 #about-ash div.card {
   border: none;
-  background-color: #e3dfcf;
 }
 
 h3.about-title {
@@ -128,17 +134,15 @@ span.ashley {
 #featured {
   grid-area: featured;
   text-align: center;
-  background-color: #c5d5cb;
 }
 
 #featured h3 {
   padding-top: 20px;
 }
 .card {
-  padding: 5px;
+  padding: 20px;
   border: none;
   margin: 40px auto;
-  background-color: #c5d5cb;
 }
 
 .vid-title {
