@@ -17,6 +17,10 @@
   padding: 3% 6%;
 }
 
+.card {
+  width: 90%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,7 +28,8 @@
   grid-template-areas:
   "nav-bar nav-bar"
   "title title"
-  "about about"
+  "about-mind about-mind"
+  "about-ash about-ash"
   "featured featured"
   "feat-guest feat-guest"
   "contact contact";
@@ -65,11 +70,25 @@ h2 {
   background-size: cover;
 }
 
-/* about styling */
+/* about mind unravelled styling */
+
+#about-mind {
+  grid-area: about-mind;
+}
+
+#about-mind div.card {
+  background-color: #ddd8d8;
+}
+
+#about-mind p {
+  text-align: left;
+}
 
 
-#about {
-  grid-area: about;
+/* about ash */
+
+#about-ash {
+  grid-area: about-ash;
   background-color: #e3dfcf;
 }
 
@@ -77,10 +96,8 @@ h2 {
   padding: 15px 0;
 }
 
-.card {
-  width: 90%;
-}
-#about div.card {
+
+#about-ash div.card {
   border: none;
   background-color: #e3dfcf;
 }
@@ -111,6 +128,7 @@ span.ashley {
 #featured {
   grid-area: featured;
   text-align: center;
+  background-color: #c5d5cb;
 }
 
 #featured h3 {
@@ -120,7 +138,7 @@ span.ashley {
   padding: 5px;
   border: none;
   margin: 40px auto;
-  background-color: #ddd8d8;
+  background-color: #c5d5cb;
 }
 
 .vid-title {
@@ -130,10 +148,14 @@ span.ashley {
   padding-top: 20px;
 }
 
-
+/* featured guest styling */
 
 #feat-guest {
   grid-area: feat-guest;
+}
+
+#feat-guest div.card {
+  background-color: #ddd8d8;
 }
 
 #contact {

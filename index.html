@@ -21,7 +21,7 @@
 
     <section id="nav-bar" class="colored sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand brand-text" href="#">A Mind Unravelled</a>
+        <a class="navbar-brand brand-text" href="#title">A Mind Unravelled</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,10 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#title">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about-mind">About A.M.U.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-ash">Meet Ashley</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#featured">Featured</a>
@@ -75,11 +78,36 @@
 
     <!-- about section -->
 
+    <section id="about-mind" class="container-fluid colored">
+      <div class="card-deck">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="">
+              <img src="images/leaves.png" alt="leaves-img">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <h3 class="card-title about-title">What is "A Mind Unravelled?"</span></h3>
+            <p>Welcome to A Mind Unraveled! This is a safe space to have fun (and let’s face it, sometimes difficult) conversations about the mental health world. This will be the landing page of my video blog that talks about all different aspects
+              of mental health- from navigating insurance to diagnoses to how to have difficult conversations with your partner. This is not an outlet to give advice or talk about my own mental health issues! This is a space to answer questions I am
+              frequently asked and to give you a tiny peek inside the world of mental health from a therapist’s perspective.<br><br>
 
-    <section id="about" class="container-fluid">
+              To keep things interesting, and because I have really smart friends and family in the field, I’ll have frequent guests on the blog to talk about topics they’re passionate about! Videos on this blog will never be perfect. There won’t be
+              editing or starting filming over. This space is for answering real questions from real people. Thanks so much for being here and helping end the stigma around mental health!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="about-ash" class="container-fluid">
       <div class="card-deck">
 
-        <div class="card col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title about-title">Hi, I'm <span class="ashley">Ashley</span></h3>
@@ -119,9 +147,9 @@
     </section>
 
 
-    <section id="featured" class="container-fluid colored">
+    <section id="featured" class="container-fluid">
 
-        <h3 class="card-title about-title">Featured</h3>
+      <h3 class="card-title about-title">Featured</h3>
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="card">
@@ -130,7 +158,7 @@
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
               </div>
-              <p class="vid-desc">Video Description</p>
+              <p class="vid-desc">Lorem ipsum dolor sit amet, magna blandit, massa sodales eget, ornare sodales orci. Venenatis sem morbi. Quam dui placerat, vivamus mattis vivamus. Ut id, nec et. Id amet ipsum.</p>
             </div>
 
           </div>
@@ -141,7 +169,7 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
-            <p class="vid-desc">Video Description</p>
+            <p class="vid-desc">Lorem ipsum dolor sit amet, magna blandit, massa sodales eget, ornare sodales orci. Venenatis sem morbi. Quam dui placerat, vivamus mattis vivamus. Ut id, nec et. Id amet ipsum.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
@@ -150,7 +178,7 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
-            <p class="vid-desc">Video Description</p>
+            <p class="vid-desc">Lorem ipsum dolor sit amet, magna blandit, massa sodales eget, ornare sodales orci. Venenatis sem morbi. Quam dui placerat, vivamus mattis vivamus. Ut id, nec et. Id amet ipsum.</p>
           </div>
         </div>
 
@@ -159,15 +187,21 @@
     </section>
 
 
+    <section id="feat-guest" class="container-fluid colored">
+      <h3 class="card-title about-title">Featured Guest</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <h3 class="vid-title">Oprah Winfrey</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+            <p class="vid-desc">Oprah is here to talk about what it's like to be rich.</p>
+          </div>
 
+        </div>
 
-
-
-
-
-
-    <section id="feat-guest" class="colored">
-      Featured Guest
+      </div>
     </section>
     <section id="contact">
       Contact
@@ -181,7 +215,7 @@
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
