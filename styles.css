@@ -3,6 +3,7 @@
   padding: 0;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .colored {
@@ -24,7 +25,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(7, minmax(20px, auto));
+  grid-template-rows: repeat(8, minmax(20px, auto));
   grid-template-areas:
   "nav-bar nav-bar"
   "title title"
@@ -32,7 +33,8 @@
   "about-mind about-mind"
   "featured featured"
   "feat-guest feat-guest"
-  "contact contact";
+  "contact contact"
+  "footer footer";
 }
 
 /* nav-bar styling */
@@ -42,8 +44,18 @@
   opacity: 0.95;
   background-color: white;
 }
+.icons {
+  width: 35px;
+  padding: 0 10px 0 5px;
+}
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -56px;
+}
 /* title styling */
+
 
 
 #title {
@@ -51,7 +63,7 @@
 }
 
 .heading {
-  padding: 16rem 0 17rem;
+  padding: 15rem 0 16rem;
 }
 
 h1.brand-text {
@@ -74,22 +86,57 @@ h1.brand-text {
   background-size: cover;
 }
 
+#title button {
+  position: relative;
+  bottom: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+
+#title button a {
+    color: white;
+    font-size: 2rem;
+}
+
+#title button a:hover {
+  color: #ddd8d8;
+}
+
 /* about mind unravelled styling */
 
 #about-mind {
   grid-area: about-mind;
 }
 
+
 #about-mind div.card {
   background-color: #ddd8d8;
 }
 
 #about-mind h3 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
 }
 #about-mind p {
   text-align: left;
 }
+
+#about-mind button {
+  position: relative;
+  bottom: 60px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+#about-mind button a {
+    color: black;
+    font-size: 2rem;
+}
+
 
 
 /* about ash */
@@ -99,8 +146,9 @@ h1.brand-text {
   background-color: #fff;
 }
 
+
 .card-deck {
-  padding: 15px 0;
+  padding: 30px 0;
 }
 
 
@@ -129,6 +177,20 @@ span.ashley {
   text-decoration: underline;
 }
 
+#about-ash button {
+  position: relative;
+  bottom: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+#about-ash button a {
+    color: black;
+    font-size: 2rem;
+}
+
 /* featured styling */
 
 #featured {
@@ -136,11 +198,15 @@ span.ashley {
   text-align: center;
 }
 
+#featured .row {
+  padding: 10px 0 25px 0;
+}
+
 #featured h3 {
   padding-top: 20px;
 }
 .card {
-  padding: 20px;
+  padding: 5px;
   border: none;
   margin: 40px auto;
 }
@@ -150,6 +216,20 @@ span.ashley {
 }
 .vid-desc {
   padding-top: 20px;
+}
+
+#featured button {
+  position: relative;
+  bottom: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+#featured button a {
+    color: black;
+    font-size: 2rem;
 }
 
 /* featured guest styling */
@@ -162,6 +242,64 @@ span.ashley {
   background-color: #ddd8d8;
 }
 
+#feat-guest .about-title {
+  padding-top: 50px;
+}
+
+#feat-guest button {
+  position: relative;
+  bottom: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+#feat-guest button a {
+    color: black;
+    font-size: 2rem;
+}
+
+/* contact page */
+
 #contact {
   grid-area: contact;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact-heading {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+#contact.card-deck {
+  margin: 0 0;
+}
+
+
+/* footer */
+
+#footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  opacity: 0.8;
 }
